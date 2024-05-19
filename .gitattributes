@@ -1,0 +1,21 @@
+# Varsayılan davranış olarak metin dosyalarını normalize et.
+* text=auto
+
+# Belirli metin dosyalarını normalleştirmek için açıkça belirt
+*.c text
+*.h text
+*.cpp text
+*.hpp text
+
+# Shell script dosyaları için her zaman LF satır sonları kullan
+*.sh text eol=lf
+
+# Batch dosyaları için her zaman CRLF satır sonları kullan
+*.bat text eol=crlf
+
+# İkili dosyaların satır sonları değiştirilmemeli
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
+*.exe binary
